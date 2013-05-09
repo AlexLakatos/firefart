@@ -1,0 +1,13 @@
+{
+  "name": "FireFart",
+  "description": "Random farts whenever you press the button.",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon.png"
+  },
+  "developer": {
+    "name": "Green Square",
+    "url": "http://apps.greensqr.com"
+  },
+  "default_locale": "en"
+}
