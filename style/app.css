@@ -41,6 +41,10 @@ section[role="region"] > header:first-child:after {
     margin-top: 20%;
 }
 
+#fart a {
+    outline: none;
+}
+
 #menu a {
   color: #D40000;
   font-weight: bold;
