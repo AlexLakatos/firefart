@@ -5,18 +5,45 @@
     <title>FireFart</title>
     <link rel="stylesheet" type="text/css" href="shared/style/headers.css">
     <link rel="stylesheet" type="text/css" href="shared/style_unstable/drawer.css">
+    <link href="shared/style/switches.css" rel="stylesheet" type="text/css">
+    <link href="shared/style/buttons.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css" href="style/app.css">
+    <script type="text/javascript" src="js/lib/shake.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body role="application">
 
   <section data-type="sidebar" id="menu">
     <nav>
-      <h2>Credits</h2>
-        <p>App created by <a href="https://twitter.com/lakatos88" target="_new">@lakatos88</a></p>
-        <p><a href="https://twitter.com/ejpbruel" target="_new">@ejpbruel</a> came up with the name</p>
-        <p>Contribute to it on <a href="https://github.com/AlexLakatos/firefart" target="_new">Github</a></p>
+      <h2>Options</h2>
+      <ul>
+        <li id="chain">
+          <a href="#">Chain Farts
+            <label class="pack-checkbox danger">
+              <input type="checkbox">
+              <span></span>
+            </label>
+          </a>
+        </li>
+        <li id="shake">
+          <a href="#">Shake to Fart
+            <label class="pack-checkbox danger">
+              <input type="checkbox">
+              <span></span>
+            </label>
+          </a>
+        </li>
+      </ul>
+      <h2>More Apps</h2>
+      <ul>
+        <li id="101-quotes">
+          <a href="https://marketplace.firefox.com/app/101-quotes/" target="_new">101 Quotes</a>
+        </li>
+        <li id="501-quotes">
+          <a href="https://marketplace.firefox.com/app/501-quotes/" target="_new">501 Quotes</a>
+        </li>
+      </ul>
     </nav>
   </section>
 
@@ -27,7 +54,12 @@
       <h1>FireFart</h1>
     </header>
     <div role="main">
-      <p id="fart"><a href="#"><img src="img/button-up.png"></a></p>
+      <p id="fart"><a href="#"><img src="icon.png"></a></p>
+
+      <div id="button-wrapper">
+        <input id="fart-time" type="number" value="5" />
+        <button class="danger" id="fart-button">Fart in<span></span>seconds</button>
+      </div>
     </div>
   </section>
   </body>
