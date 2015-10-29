@@ -7,17 +7,35 @@ html, body {
   overflow-x: hidden;
 }
 
+* {
+  outline: none;
+}
+
+/*
+  Building Blocks Reset - Start
+ */
+section[role="region"] {
+  left: 0;
+  padding-left: 0;
+}
+
+section[role="region"] > header:first-child {
+  margin-left: 0;
+}
+
+/*
+  Building Blocks Reset - End
+ */
+
 section[role="region"] {
   height: 100%;
 }
 
 div[role="main"] {
   height: calc(100% - 5rem);
-  left: -1.6rem;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
-  width: calc(100% + 1.6rem);
   background:
     url(../shared/style/confirm/images/ui/pattern.png) repeat left top,
     url(../shared/style/confirm/images/ui/gradient.png) no-repeat left top / 100% 100% #000000;
@@ -29,23 +47,14 @@ section[role="region"] > header:first-child:after {
 }
 
 #drawer p {
-    height: calc(100%);
-    left: 1.6rem;
-    margin: 0;
-    position: relative;
-    text-align: center;
-    width: calc(100% - 1.6rem);
+  text-align: center;
 }
 
 #drawer p img {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
-#fart a {
-    outline: none;
-}
-
-#menu a {
+#credits a {
   color: #D40000;
   font-weight: bold;
   text-decoration: none;
@@ -54,4 +63,41 @@ section[role="region"] > header:first-child:after {
 #menu p {
   color: #FFFFFF;
   font-size: 1.3rem;
+  padding-left: 3rem;
+}
+
+#chain label {
+  left: 8rem;
+}
+
+#shake label {
+  left: 6.4rem;
+}
+
+#button-wrapper button {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+#button-wrapper {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+#button-wrapper span {
+  margin: 0px 70px;
+}
+
+#fart-time {
+  border: 0 none;
+  border-radius: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  width: 60px;
+  position: relative;
+  bottom: -40px;
+  left: -6px;
 }
